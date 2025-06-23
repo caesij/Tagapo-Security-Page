@@ -34,8 +34,8 @@
   display: flex;
   align-items: flex-start;
   background-color: #f5f5f5;
-  padding: 50px 50px 50px 150px;
-  width: 780px;
+  padding: 50px 50px 50px 225px;
+  width: 900px;
   border-radius: 0.8vw;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   position: relative;
@@ -44,7 +44,7 @@
 
 /* Step Numbering*/
 .steps::before {
-  content: counter(step);
+  content: counter(step, decimal-leading-zero);
   position: absolute;
   left: 60px;
   top: 50%;
@@ -82,19 +82,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15px;
-  width: 675px;
+  margin-top: 5px;
+  width: 875px;
   max-width: 100%;
-}
-
-.note .indent {
-  display: inline-block;
-  margin-left: 55px;
-}
-
-.note .align-start {
-  display: inline-block;
-  min-width: 55px;
 }
 
 .note p {

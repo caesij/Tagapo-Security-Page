@@ -34,9 +34,9 @@
   display: flex;
   align-items: flex-start;
   background-color: #f5f5f5;
-  padding: 50px 50px 50px 225px;
+  padding: 65px 70px 65px 225px;
   width: 900px;
-  border-radius: 0.8vw;
+  border-radius: 50px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   position: relative;
   counter-increment: step;

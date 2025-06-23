@@ -1,3 +1,7 @@
+section.report {
+  margin-bottom: 10vh;
+}
+
 .report {
   display: flex;
   flex-direction: column;

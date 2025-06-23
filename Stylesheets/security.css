@@ -10,6 +10,10 @@ html {
   width: 100%;
 }
 
+.red-highlight {
+  color: #eb0000;
+}
+
 /* For Header and Footer Section */
 /* Header */
 header {

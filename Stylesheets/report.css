@@ -60,6 +60,10 @@
   text-align: justify;
 }
 
+.red-highlight a {
+  color: #eb0000;
+}
+
 /* Hovering Effect for Step Box */
 .step-item:hover .steps {
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,

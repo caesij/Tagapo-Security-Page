@@ -3,6 +3,8 @@
 font-family: 'Poppins';
 }
 
+
+
 .bpat-content{
 
   display: flex;
@@ -18,13 +20,20 @@ font-family: 'Poppins';
     flex: 1;
     
     
-    
 }
 
 .content h1{
-    line-height: 0.05;
+    line-height: 1.2;
     font-family: 'Poppins' sans-serif;
     font-weight: bold;
+    font-size: 50px;
+}
+
+.content h2{
+    line-height: 1.2;
+    font-family: 'Poppins' sans-serif;
+    font-weight: bold;
+    color: #eb0000;
 }
 
 .content p {
@@ -73,4 +82,8 @@ font-family: 'Poppins';
 	margin: -5px 0 0;
 	padding: 10px 5px;
 	text-align: center;
+}
+
+.carousel-buttons{
+    margin-top: 20px;
 }

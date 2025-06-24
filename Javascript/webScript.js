@@ -81,7 +81,80 @@ function observeElement(element, className) {
 
   observer.observe(element);
 }
+/* Carousel*/
+$(document).ready(function() {
+  const contentData = [
+    {
+      name: "Allan Urisantos",
+      position: "BPAT Chief Head",
+      description: "He leads, organizes, and mobilizes the Barangay Peacekeeping Action Team (BPAT) to effectively implement community-oriented policing and public safety programs, ensuring peace, order, and security within the barangay."
+    },
+    {
+      name: "Jonard Barroso",
+      position: "BPAT Deputy Chief Head",
+      description: "To assist the BPAT Chief in the leadership, organization, and mobilization of the Barangay Peacekeeping Action Team (BPAT) to ensure the effective implementation of community-oriented policing and public safety programs, thereby contributing to peace, order, and security within the barangay."
+    },
+    {
+      name: "Eduardo Realco",
+      position: "BPAT Team Supervisor",
+      description: "Ensures the effective and coordinated operation of multiple BPAT teams or specific operational areas, providing oversight, guidance, and support to Team Leaders and members, and reporting directly to the BPAT Chief or Deputy Chief on the overall peace and order situation and BPAT performance within their assigned area."
+    },
+    {
+      name: "Ramir Paje",
+      position: "BPAT Team Supervisor",
+      description: "Ensures the effective and coordinated operation of multiple BPAT teams or specific operational areas, providing oversight, guidance, and support to Team Leaders and members, and reporting directly to the BPAT Chief or Deputy Chief on the overall peace and order situation and BPAT performance within their assigned area."
+    },
+    {
+      name: "Renato Diaz",
+      position: "BPAT Team Supervisor",
+      description: "Ensures the effective and coordinated operation of multiple BPAT teams or specific operational areas, providing oversight, guidance, and support to Team Leaders and members, and reporting directly to the BPAT Chief or Deputy Chief on the overall peace and order situation and BPAT performance within their assigned area."
+    }
+  ];
+
+  let currentIndex = 0;
+  const $name = $("#name");
+  const $position = $("#position");
+  const $description = $("#description");
+
+  function updateContent(index) {
+    $name.fadeOut(500, function() {
+      $name.text(contentData[index].name).fadeIn(300);
+    });
+
+    $position.fadeOut(500, function() {
+      $position.text(contentData[index].position).fadeIn(300);
+    });
+
+    $description.fadeOut(500, function() {
+      $description.text(contentData[index].description).fadeIn(300);
+    });
+  }
+
+  const $carousel = $('.carousel');
+
+
+  $carousel.carousel({
+    onCycleTo: function (ele) {
+      const index = $(ele).index();
+      updateContent(index);
+    }
+  });
+
+
+  $('#nextBtn').click(function () {
+    $carousel.carousel('next');
+  });
+
+  $('#prevBtn').click(function () {
+    $carousel.carousel('prev');
+  });
+});
 
 initializeHeaderScript();
 initializeFooterScript();
 initializeIntersectAnimations();
+
+
+
+
+

@@ -1,7 +1,7 @@
 section.contact-us {
     margin: 0 auto;
-    margin-top: 10vh;
-    margin-bottom: 15vh;
+    margin-top: 20vh;
+    margin-bottom: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,7 @@ section.contact-us {
     text-align: center;
     transition: box-shadow 0.3s ease;
     transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
     transform: 0.3s ease;
     cursor: pointer;
 }

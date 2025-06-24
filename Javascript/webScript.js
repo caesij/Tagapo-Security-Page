@@ -116,24 +116,32 @@ $(document).ready(function() {
   const $position = $("#position");
   const $description = $("#description");
 
-  function updateContent(index) {
-    $name.fadeOut(500, function() {
-      $name.text(contentData[index].name).fadeIn(300);
-    });
+ function updateContent(index) {
+  const fullName = contentData[index].name.trim().split(" ");
+  const firstName = fullName.slice(0, -1).join(" ");
+  const lastName = fullName[fullName.length - 1];
+  const nameHTML = `${firstName} <span style="color:#eb0000">${lastName}</span>`;
 
-    $position.fadeOut(500, function() {
-      $position.text(contentData[index].position).fadeIn(300);
-    });
+  // Fade to new content by animating opacity only
+  $name.stop().animate({ opacity: 0.1 }, 300, function () {
+    $(this).html(nameHTML).animate({ opacity: 1 }, 300);
+  });
 
-    $description.fadeOut(500, function() {
-      $description.text(contentData[index].description).fadeIn(300);
-    });
-  }
+  $position.stop().animate({ opacity: 0.1 }, 300, function () {
+    $(this).text(contentData[index].position).animate({ opacity: 1 }, 300);
+  });
+
+  $description.stop().animate({ opacity: 0.1 }, 300, function () {
+    $(this).text(contentData[index].description).animate({ opacity: 1 }, 300);
+  });
+}
+ 
 
   const $carousel = $('.carousel');
 
 
   $carousel.carousel({
+    
     onCycleTo: function (ele) {
       const index = $(ele).index();
       updateContent(index);

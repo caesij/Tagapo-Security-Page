@@ -3,7 +3,7 @@
 font-family: 'Poppins';
 }
 
-#brgy-header{
+.officials #brgy-header{
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -13,7 +13,7 @@ font-family: 'Poppins';
   
 }
 
-.bpat-content {
+.officials .bpat-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,71 +24,66 @@ font-family: 'Poppins';
   margin-top: -200px;
 }
 
-.carousel-container,
-.content {
+ .officials .carousel-container,
+.officials .content {
   max-width: 500px;
 }
 
-.content{
+.officials .content{
     margin-top: 100px;
 }
-.content h1{
+
+.officials .content h1{
     line-height: 1.2;
     font-family: 'Poppins' sans-serif;
     font-weight: bold;
     font-size: 50px;
 }
 
-.content h2{
+.officials .content h2{
     line-height: 1.2;
     font-family: 'Poppins' sans-serif;
     font-weight: bold;
     color: #eb0000;
 }
 
-.content p {
+.officials .content p {
     width: 550px;
     text-align: justify;
 }
 
-.carousel-container{
+.officials .carousel-container{
    overflow:visible;
    width: 600px;
    display: flex;
    justify-content: center;
    align-items: center;
-   
 }
 
 
-.carousel {
+.officials .carousel {
 	height:1000px;
 	perspective: 800px;
 	transform: translateY(-100px);
-    
-    
-    
-    
-
 }
 
-.carousel .carousel-item {
+.officials .carousel .carousel-item {
 	cursor: pointer;
 	width: 400px;
 }
 
-.carousel .carousel-item:active {
+.officials .carousel .carousel-item:active {
 	cursor: pointer;
 }
 
-.carousel .carousel-item img {
+.officials .carousel .carousel-item img {
 	width: 100%;
     object-fit: cover;
     height: 550px;
     border-radius: 30px;
 }
 
-.carousel .carousel-item h3 {
+.officials .carousel .carousel-item h3 {
 	background-color: #ffffff;
 	color: #000000;
 	font-size: 2em;
@@ -98,6 +93,6 @@ font-family: 'Poppins';
 	text-align: center;
 }
 
-.carousel-buttons{
+.officials .carousel-buttons{
     margin-top: 20px;
 }

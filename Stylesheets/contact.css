@@ -83,7 +83,11 @@ section.contact-us {
   font-size: 18px;
   color: #eb0000;
   margin: 0;
-  top: 95px;
+  top: 135px;
+  left: 125px;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 0 10px;
 }
 
 .contact-us .container-wrapper .grid .card h1 {
